@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "desinfectante",
+        "description": "Ayudin limpiadores de pisos",
+        "price": 430,
+        "thumbnail": "./img/desinfectante.png",
+        "code": "P001",
+        "stock": 15
+    },
+    {
+        "id": 2,
+        "title": "jabon de ropa",
+        "description": "Skip jabon liquido para diluir",
+        "price": 1800,
+        "thumbnail": "./img/jabonderopa.png",
+        "code": "P002",
+        "stock": 5
+    },
+    {
+        "id": 3,
+        "title": "limpia vidrios",
+        "description": "Cif ultra rápido vidrios",
+        "price": 300,
+        "thumbnail": "./img/limpiavidrios.png",
+        "code": "P003",
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "title": "detergente",
+        "description": "Lavavajilla Magistral 500ml",
+        "price": 300,
+        "thumbnail": "./img/magistral.png",
+        "code": "P004",
+        "stock": 20
+    },
+    {
+        "id": 5,
+        "title": "limpiador multisuperficies",
+        "description": "Limpiador Cif Ultra Brillo Original 400ml",
+        "price": 520,
+        "thumbnail": "./img/lustramuebles.png",
+        "code": "P005",
+        "stock": 30
+    },
+    {
+        "id": 6,
+        "title": "rollo de cocina",
+        "description": "Rollo De Cocina Sussex Clasico 50 Paños 3u",
+        "price": 830,
+        "thumbnail": "./img/sussex.png",
+        "code": "P006",
+        "stock": 40
+    },
+    {
+        "id": 7,
+        "title": "desinfectante",
+        "description": "Desinfectante Amb Lysoform Lavanda 360cc",
+        "price": 650,
+        "thumbnail": "./img/lysoform.png",
+        "code": "P007",
+        "stock": 12
+    },
+    {
+        "id": 8,
+        "title": "jabon blanco",
+        "description": "Jabón En Pan Argentino 400 Gr",
+        "price": 420,
+        "thumbnail": "./img/jabonblanco.png",
+        "code": "P008",
+        "stock": 14
+    },
+    {
+        "id": 9,
+        "title": "papel higenico",
+        "description": "Papel Higienico Felpita Hoja Simple 6x80",
+        "price": 2000,
+        "thumbnail": "./img/felpita.png",
+        "code": "P009",
+        "stock": 8
+    },
+    {
+        "id": 10,
+        "title": "suavizante",
+        "description": "Suavizante Downy Perfume 1lt",
+        "price": 2200,
+        "thumbnail": "./img/downy.png",
+        "code": "P010",
+        "stock": 2
+    }
+]

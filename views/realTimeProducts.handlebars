@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+
+<body>
+    <h1>Todos nuestros productos</h1>
+    <ul>
+        {{#each products}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Nombre del producto">
+        <button type="submit">Agregar Producto</button>
+        <button id="removeProduct">Eliminar Productos</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        
+        socket.on('productAdded', (productName) => {
+            
+            const productItem = document.createElement('li');
+            productItem.textContent = productName;
+            document.querySelector('ul').appendChild(productItem);
+        });
+
+        socket.on('productRemoved', () => {
+            
+            document.querySelector('ul').innerHTML = '';
+        });
+
+        
+        document.querySelector('#productForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const productName = document.querySelector('#productName').value;
+            
+            socket.emit('addProduct', productName);
+        });
+
+        
+        document.querySelector('#removeProduct').addEventListener('click', (e) => {
+            socket.emit('removeProduct');
+        });
+    </script>
+</body>
+
+</html>
